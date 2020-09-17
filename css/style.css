@@ -1,0 +1,345 @@
+:root {
+  --animation-duration: 2s;
+    --animate-delay: 2s;
+}				
+								
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+
+}
+html{
+	overflow: hidden;
+	overflow-y: auto;
+}
+					/****************************** Start Navbar ******************************/
+.navbar{
+	padding: .5rem 0rem
+}
+.navbar-expand-lg .navbar-nav {
+	padding-top: 30px
+}
+.navbar-expand-lg button{
+	background-color: #db99aa;
+}
+.navbar-expand-lg .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-expand-lg .navbar-nav li 
+{
+	padding: 0px;
+	font-size: 17px;
+	outline: 0;
+	border-right: 1px solid #d9d9d9;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+.navbar-expand-lg .navbar-nav li:last-child{
+	border-right: none
+}
+.navbar-expand-lg .navbar-nav li:hover {
+	outline: 0;
+	background-color: gray;
+	
+}
+.navbar-color{
+	background-color: #fefbec
+}
+.navbar-expand-lg .navbar-nav a{
+	color:#393a3c;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+.navbar-expand-lg .navbar-nav a:hover{
+	background-color: gray;
+	color: #fefbec
+}
+.navbar-expand-lg .navbar-nav a:hover{
+color: #fefbec !important;
+}
+.dropdownImg{
+	border-radius: 11%;
+	height: 18px;
+	width: 25px;
+	margin-top: -3px;
+}
+				/****************************** END Navbar ******************************/
+				/****************************** Start Header ***************************/
+.header{
+	background: url('../images/home_background.png') no-repeat top center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	position:relative;
+	color:#fff;
+	height: 45vh
+}
+.hedaer .centering-vh{
+	margin-top:50vh
+}
+.header h1 
+{
+	font-weight:bold;
+	font-size:50px;
+	margin: auto;
+	padding-top: 90px;
+	font-family: monospace
+}
+@media  (max-width:990px){
+	.header{
+		height:60vh 
+	}
+	.hedaer .centering-vh{
+		margin-top:15vh
+	}
+	.header h1{
+		padding-top: 50px;
+	}
+}
+		/****************************** End Header ***************************/
+		/****************************** Start OurStory ***************************/
+.our-story {
+	background-image: url('../images/hope.jpg') ;
+	color:#fff;
+}
+.our-story  h2{
+	padding-top: 50px;
+	letter-spacing: 1px;
+	font-size: 3em;
+	font-weight: 300;
+	padding-bottom: 10px;
+	color:#f3f2e3;
+}
+ hr{
+	box-sizing: content-box;
+	height: 1px;
+	overflow: visible;
+	width: 14%;
+	background: #FFF;
+}
+.our-story  p{
+	font-size: 20px;
+	line-height: 1.5;
+	letter-spacing: .75px;
+	padding: 35px 50px;
+	margin-bottom: 0;
+	--animation-duration: 20s;
+	  --animate-delay: 10s;
+}
+		/****************************** END OurStory ***************************/
+		/****************************** START Categories ***********************/
+.categories{
+	background-color: #fbf2e7;
+}
+.categories .col-md-6{
+	padding: 20px
+}
+.categories a{
+	text-decoration: none;
+	color:#222;
+}
+.knowledge ,
+.action ,
+.spirituality ,
+.moral {
+	width:95%;
+	height: 110px;
+	transform: skew(-20deg);
+	padding-top: 33px;
+	font-size: 25px;
+	position: relative;
+	margin:20px;
+	cursor: pointer;
+	display: block;
+	-webkit-transition: 2.25s;
+	-moz-transition: 2.25s;
+	-o-transition: 2.25s;
+	transition: 2.25s;
+    box-shadow: 10px 10px 5px grey;
+}
+.moral{
+	background-color: #ed1a51;
+	right: 21px;
+}
+
+.action{
+	background-color: #45b33a;
+	left: 51px;
+}
+.spirituality{
+	background-color: #ea874e;
+	left: 11px;
+}
+.knowledge{
+	background-color: #ebe932;
+	right: -19px;
+}
+.knowledge:hover,
+.moral:hover,
+.action:hover,
+.spirituality:hover{
+	-webkit-transform: translate3d(-30px, 10px, 0px);
+	-moz-transform: translate3d(-30px, 10px, 0px);
+	-o-transform: translate3d(-30px, 10px, 0px);
+	transform: translate3d(-30px, 10px, 0px);
+}
+@media (max-width: 765px){
+	.categories .col-md-6{
+		padding: 0px
+	}
+	.knowledge ,
+	.action ,
+	.spirituality ,
+	.moral{
+		transform: none;
+		width: 90%
+	}
+	.knowledge:hover,
+	.moral:hover,
+	.action:hover,
+	.spirituality:hover{
+		-webkit-transform: translate3d(-30px, 10px, 0px);
+		-moz-transform: translate3d(-30px, 10px, 0px);
+		-o-transform: translate3d(-30px, 10px, 0px);
+		transform: translate3d(-30px, 10px, 0px);
+}
+	.moral{
+		right: -16px
+	}
+	.knowledge{
+		right: -15px;
+		margin-bottom: 25px;
+		margin-top: 5px;
+	}
+	.action {
+		left: 10px;
+		margin-bottom: 25px
+	}
+	.spirituality{
+		left: 11px
+	}
+
+}
+		/****************************** END Categories ***************************/
+		/****************************** Start ContactUs ***************************/
+.contact-us .contact-us-span{
+	font-size: 15px;
+}
+.contact-us .icons{
+	padding: 20px;
+	
+	margin-bottom: 20px;
+}
+.contact-us .icons path{
+	fill:#ccc;
+	margin:10px 35px;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	cursor:pointer;
+}
+/*.contact-us .icons .fa-envelope path:hover{
+	fill:#dd4b39;
+}*/
+.contact-us .icons .fa-facebook path:hover{
+	fill:#3b5998;
+}
+.contact-us .icons .fa-instagram path:hover{
+	fill:#f56040;
+}
+.contact-us .icons .fa-linkedin path:hover{
+	fill:#0077b5;
+}
+.contact-us .icons .fa-soundcloud path:hover{
+	fill:#ff8800;
+}
+.contact-us .icons .fa-youtube path:hover{
+	fill:#ff0000;
+}
+.footer{
+	background-color: #343a40;
+	color: #fff;
+	font-size: 17px;
+	padding: 10px;
+	font-weight: lighter;
+}
+.footer a{
+	text-decoration:none;
+	color: #ffffec ;
+	transition: .5s ease-in-out
+}
+.footer a:hover{
+	color: #ff4116
+}
+@media (max-width: 550px){
+	.footer{
+		font-size: unset
+	}
+}
+		/****************************** END ContactUs ***************************/
+
+				/******************************* Global Clases *************************/
+.overlay  /*the dark layer */
+{
+	background-color: rgb(49,55,61 ,.9);
+    height: 100%;
+    width: 100%;
+	/*for Internet Explorer*/
+	background:#44484a;
+	opacity:0.9
+}
+h2{
+	padding-top: 50px;
+	letter-spacing: 1px;
+	font-size: 3em;
+	font-weight: 300;
+	padding-bottom: 10px;
+	color:#393737;
+	font-family: monospace
+}
+.our-story h2{
+	font-family: Bookman, URW Bookman L, serif
+}
+hr{
+	background-color:#6A6767;
+}
+.clearfix{
+	display: block;
+	clear: both;
+}
+#scroll-top
+{
+	width:50px;
+	height:40px;
+	color:#ddd;
+	background-color:#272727;
+	text-align:center;
+	position:fixed;
+	right:15px;
+	bottom:10px;
+	z-index:99999;
+    border-radius: 30%;
+	cursor:pointer;
+	display:none;
+}
+#scroll-top:hover
+{   
+	color:#fff;
+	background-color:#f7600e;
+}
+#scroll-top svg
+{padding-top:9px;}
+.nicescroll-rails-hr{display:none!important}
+
+#loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #fff url('../images/loader.gif') no-repeat center;
+	z-index: 9999;
+}

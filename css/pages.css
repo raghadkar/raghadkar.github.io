@@ -1,0 +1,160 @@
+
+										/************************ START SPIRITUALITY PAGE *************************/
+.breadcrumb-holder
+{
+	background-color:#f5f5f5;
+}
+.breadcrumb
+{
+	padding:10px 0;
+	margin-top:50px
+}
+.breadcrumb a{
+	text-decoration:none;
+}
+.spir-video .container,
+.moral-video .container,
+.action-video .container,
+.knowledge-video .container{
+	border-bottom: 1px solid #ccc
+}
+.spir-video .row{
+margin-top: 100px;
+}
+.spir-video iframe:nth-child(even){
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+										/************************ END SPIRITUALITY PAGE *************************/
+										/************************ START MORAL PAGE ******************************/
+.moral-video iframe{
+	margin: 50px auto
+}
+										/************************ END MORAL PAGE ******************************/
+										/************************ START ACTION PAGE **************************/
+.action-video .row{
+	margin-top: 100px;
+}
+.action-video iframe{
+	margin-bottom: 50px 
+}
+										/************************ END ACTION PAGE ***************************/
+										/************************ END Knowledge PAGE ***************************/
+.knowledge-video .sub-container{
+	margin-top: 100px
+}
+.knowledge-video .row{
+margin-top: 60px;
+}
+.knowledge-video iframe{
+	margin-bottom: 50px 
+}
+ h3 {
+    overflow: hidden;
+  text-align: center;
+  color: #c11212;
+  margin-top: 50px;
+  line-height: 1.4
+}
+
+h3:before,
+h3:after {
+  background-color: #ccc;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+ h3:before {
+  right: 0.5em;
+  margin-left: -115%;
+}
+
+ h3:after {
+  left: 0.5em;
+  margin-right: -50%;
+} 
+@media (max-width: 850px){
+	h3:before{
+		margin-left: -74%
+	}
+}
+
+.color {
+    background-color: #ccc;
+}
+		/************************ MEMBERS **********************/
+.sub-container{
+			margin-top: 100px
+}
+.members .row{
+	margin-top: 40px
+}
+.second-sub-container{
+	margin-bottom: 40px
+}
+.second-sub-container .row{
+    margin-top: 70px;
+}
+@media (max-width: 770px){
+	.members .row{
+		margin-top: 0px
+	}
+}
+.member-box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #ff0;
+  margin:10px;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+}
+.member-box .imgBox{
+	position: relative;
+	overflow: hidden;
+}
+.member-box  .imgBox img{
+	width: 100%;
+	height: 300px;
+	transition: transform 2s;
+}
+.member-box  .imgBox img:hover{
+	transform: scale(1.2);
+}
+.member-box .details{
+	position: absolute;
+	top: 5px;
+	left:5px;
+	bottom:5px;
+	right: 5px;
+	background: rgba(0,0,0,.7);
+	transform: scaleY(0);
+	transition: transform 2s;
+
+}
+.member-box:hover .details {
+	transform: scaleY(1) !important;
+}
+.member-box .details .content{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 15px;
+	color:#fff;
+}
+.member-box .details .content h2{
+	padding-top: 20px;
+	padding-bottom: 0;
+	font-size: 20px;
+	color: orange;
+	font-weight: bold;
+}
+.member-box .details .content p{
+	line-height: 1.2
+}
